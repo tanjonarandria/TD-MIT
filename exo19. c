@@ -1,0 +1,39 @@
+#include<stdio.h>
+int main(int argc, char *argv[])
+{
+ 	int x,y,z,a,b,w;
+     printf("entrer le premier nombre\n");
+     scanf("%d",&x);
+     printf("tapez le deuxième nombre\n");
+     scanf("%d",&y);
+     b=x;
+     w=y;
+
+  if (y>x)
+  
+{
+     a=x;
+     x=y;
+     y=a;
+  
+ }
+ do 
+ {  
+      z=x%y;
+      x=y;
+      y=z;}
+     while ((z>0)); 
+     
+                printf("pgcd(%d ,%d)=%d\n",b,w,x);
+     if ((x==1))
+     {    
+         printf("%d et %d est premier entre eux\n",b,w);
+     }
+     else 
+      {
+           printf("%d  et %d n'est pas premier entre eux\n ");
+      }
+ 	return 0;
+}
+
+
